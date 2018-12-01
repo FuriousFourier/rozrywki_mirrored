@@ -1,4 +1,4 @@
-package pl.edu.agh.reporting.application;
+package pl.edu.agh.reporting.ui;
 
 import pl.edu.agh.reporting.domain.site.BetTypeReport;
 import pl.edu.agh.reporting.domain.site.OperatorReport;

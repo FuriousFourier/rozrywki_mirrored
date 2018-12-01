@@ -1,4 +1,4 @@
-package pl.edu.agh.reporting.application;
+package pl.edu.agh.reporting.ui;
 
 import com.google.common.collect.ImmutableList;
 import org.springframework.web.bind.annotation.GetMapping;
