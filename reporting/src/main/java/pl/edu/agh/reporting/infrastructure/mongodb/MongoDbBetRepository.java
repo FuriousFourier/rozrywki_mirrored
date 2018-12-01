@@ -5,6 +5,7 @@ import pl.edu.agh.reporting.domain.bet.Bet;
 import pl.edu.agh.reporting.domain.bet.BetRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 class MongoDbBetRepository implements BetRepository {
@@ -18,6 +19,11 @@ class MongoDbBetRepository implements BetRepository {
     @Override
     public void save(Bet bet) {
         springMongoBetRepository.save(bet);
+    }
+
+    @Override
+    public Optional<Bet> findById(String id) {
+        return springMongoBetRepository.findById(id);
     }
 
     @Override
