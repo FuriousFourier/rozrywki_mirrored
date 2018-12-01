@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pl.edu.agh</groupId>
-    <artifactId>reporting</artifactId>
+    <artifactId>reporting-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>reporting</name>
-    <description>Reporting service</description>
+    <name>reporting-core</name>
+    <description>Reporting Core service</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -41,6 +41,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
