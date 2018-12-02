@@ -1,0 +1,35 @@
+version: '3'
+services:
+  # app containers
+  reporting:
+    build: .
+    volumes:
+      - ./reporting/:/app/reporting
+      - ./reportingapi/:/app/reportingapi
+      - ./reporting-gateway/:/app/reporting-gateway
+    ports:
+      - '8080:8080'
+      - '8081:8081'
+    depends_on:
+      - rabbitmq
+      - mongo
+  # utility containers
+  prom:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus/prometheus.yaml:/etc/prometheus/prometheus.yml
+    ports:
+      - '9090:9090'
+  grafana:
+    image: grafana/grafana
+    volumes:
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
+      - ./grafana/dashboards/:/var/lib/grafana/dashboards/
+    ports:
+      - '3000:3000'
+    depends_on:
+      - prom
+  rabbitmq:
+    image: rabbitmq:management
+  mongo:
+    image: mongo:xenial
