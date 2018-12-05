@@ -29,7 +29,6 @@ class BetMadeHandler implements ReportingEventHandler {
                 .betId(betMadeEvent.getBetId())
                 .event(betMadeEvent.getEventInfo())
                 .player(betMadeEvent.getPlayerInfo())
-                .pricePaid(betMadeEvent.getBetPrice())
                 .build();
         // TODO change reports as well
         betRepository.save(bet);
