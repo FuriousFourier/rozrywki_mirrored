@@ -2,9 +2,11 @@ package pl.edu.agh.reporting.domain.bet;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.ToString;
 
 @Getter
 @Builder
+@ToString
 public class Bet {
 
     private final String betId;

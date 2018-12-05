@@ -10,7 +10,7 @@ import pl.edu.agh.reporting.jackson.MoneySerializer;
 
 @ToString
 @Getter
-public class BetMadeEvent extends ReportingEvent {
+public class BetMadeEvent implements ReportingEvent {
 
     private String betId;
 

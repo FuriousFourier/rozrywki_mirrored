@@ -8,6 +8,7 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageHeaders;
 import pl.edu.agh.reporting.ReportingEventType;
 import pl.edu.agh.reporting.application.ReportingApplicationService;
+import pl.edu.agh.reporting.events.BetMadeEvent;
 import pl.edu.agh.reporting.events.ReportingEvent;
 
 @EnableBinding(Sink.class)
@@ -21,12 +22,18 @@ public class RabbitMqEventHandler {
     }
 
     @StreamListener(Sink.INPUT)
-    public void handleEvent(Message<ReportingEvent> message) {
+    public void handleEvent(Message<BetMadeEvent> message) {
+        dispatchEvent(message);
+    }
+
+    private void dispatchEvent(Message<? extends ReportingEvent> message) {
         log.info("Received event {}", message);
 
         final MessageHeaders headers = message.getHeaders();
         final ReportingEvent reportingEvent = message.getPayload();
-        final ReportingEventType eventType = headers.get("type", ReportingEventType.class);
+
+        final String textEventType = headers.get("type", String.class);
+        final ReportingEventType eventType = ReportingEventType.valueOf(textEventType);
 
         reportingApplicationService.handle(reportingEvent, eventType);
     }
