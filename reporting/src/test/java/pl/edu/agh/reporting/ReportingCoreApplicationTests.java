@@ -1,4 +1,4 @@
-package no.kantega.springandreact;
+package pl.edu.agh.reporting;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
