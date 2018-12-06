@@ -8,7 +8,7 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageHeaders;
 import pl.edu.agh.reporting.ReportingEventType;
 import pl.edu.agh.reporting.application.ReportingApplicationService;
-import pl.edu.agh.reporting.events.BetMadeEvent;
+import pl.edu.agh.reporting.events.BetSlipPlaced;
 import pl.edu.agh.reporting.events.ReportingEvent;
 
 @EnableBinding(Sink.class)
@@ -22,7 +22,7 @@ public class RabbitMqEventHandler {
     }
 
     @StreamListener(Sink.INPUT)
-    public void handleEvent(Message<BetMadeEvent> message) {
+    public void handleEvent(Message<BetSlipPlaced> message) {
         dispatchEvent(message);
     }
 

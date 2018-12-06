@@ -10,16 +10,18 @@ import pl.edu.agh.reporting.jackson.MoneySerializer;
 
 @ToString
 @Getter
-public class BetMadeEvent implements ReportingEvent {
+public class BetSlipFinished {
 
-    private String betId;
+    private String betSlipId;
 
-    private String eventInfo;
-
-    private String playerInfo;
+    private boolean won;
 
     @JsonSerialize(using = MoneySerializer.class)
     @JsonDeserialize(using = MoneyDeserializer.class)
-    private Money betPrice;
+    private Money revenue;
+
+    @JsonSerialize(using = MoneySerializer.class)
+    @JsonDeserialize(using = MoneyDeserializer.class)
+    private Money refund;
 
 }

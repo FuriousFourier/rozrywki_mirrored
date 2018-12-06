@@ -11,8 +11,6 @@ public class Bet {
 
     private final String betId;
 
-    private final String event;
-
     private final String player;
 
     @Builder.Default

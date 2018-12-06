@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.edu.agh.reporting.events.BetMadeEvent;
+import pl.edu.agh.reporting.events.BetSlipPlaced;
 import pl.edu.agh.reportinggateway.broker.ReportingBrokerClient;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
@@ -23,12 +23,12 @@ public class ReportingEventsAPI {
     }
 
     @PostMapping(value = "/betmade", consumes = APPLICATION_JSON_VALUE)
-    public void onBetMade(@RequestBody BetMadeEvent betMadeEvent) {
-        log.info("Received event {}", betMadeEvent);
+    public void onBetMade(@RequestBody BetSlipPlaced betSlipPlaced) {
+        log.info("Received event {}", betSlipPlaced);
 
-        reportingClient.sendEvent(betMadeEvent, BET_MADE);
+        reportingClient.sendEvent(betSlipPlaced, BET_MADE);
 
-        log.info("Forwarded event {}", betMadeEvent);
+        log.info("Forwarded event {}", betSlipPlaced);
     }
 
 }

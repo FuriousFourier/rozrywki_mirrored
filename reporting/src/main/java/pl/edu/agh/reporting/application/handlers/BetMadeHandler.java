@@ -5,10 +5,10 @@ import pl.edu.agh.reporting.ReportingEventType;
 import pl.edu.agh.reporting.application.ReportingEventHandler;
 import pl.edu.agh.reporting.domain.bet.Bet;
 import pl.edu.agh.reporting.domain.bet.BetRepository;
-import pl.edu.agh.reporting.events.BetMadeEvent;
+import pl.edu.agh.reporting.events.BetSlipPlaced;
 
 @Component
-class BetMadeHandler implements ReportingEventHandler<BetMadeEvent> {
+class BetMadeHandler implements ReportingEventHandler<BetSlipPlaced> {
 
     private final BetRepository betRepository;
 
@@ -22,11 +22,10 @@ class BetMadeHandler implements ReportingEventHandler<BetMadeEvent> {
     }
 
     @Override
-    public void handle(BetMadeEvent event) {
+    public void handle(BetSlipPlaced event) {
         final Bet bet = Bet.builder()
-                .betId(event.getBetId())
-                .event(event.getEventInfo())
-                .player(event.getPlayerInfo())
+                .betId(event.getBetSlipId())
+                .player(event.getPlayerName())
                 .build();
         // TODO change reports as well
         betRepository.save(bet);
