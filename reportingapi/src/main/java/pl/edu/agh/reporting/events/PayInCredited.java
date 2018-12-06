@@ -10,7 +10,7 @@ import pl.edu.agh.reporting.jackson.MoneySerializer;
 
 @ToString
 @Getter
-public class PayInCredited {
+public class PayInCredited implements ReportingEvent {
 
     @JsonSerialize(using = MoneySerializer.class)
     @JsonDeserialize(using = MoneyDeserializer.class)

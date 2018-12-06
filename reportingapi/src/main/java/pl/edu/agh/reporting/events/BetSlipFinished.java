@@ -10,7 +10,7 @@ import pl.edu.agh.reporting.jackson.MoneySerializer;
 
 @ToString
 @Getter
-public class BetSlipFinished {
+public class BetSlipFinished implements ReportingEvent {
 
     private String betSlipId;
 

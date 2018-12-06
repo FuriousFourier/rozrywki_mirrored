@@ -5,7 +5,7 @@ import lombok.ToString;
 
 @ToString
 @Getter
-public class BetSlipGoneLive {
+public class BetSlipGoneLive implements ReportingEvent {
 
     private String betSlipId;
 
