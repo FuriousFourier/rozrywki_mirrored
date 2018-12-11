@@ -1,14 +1,16 @@
-import React, {Component} from 'react';
-import './App.css';
-import {Nav, Navbar, NavItem} from "react-bootstrap";
+import React, {Component} from 'react'
+import './App.css'
+import {Nav, Navbar, NavItem} from "react-bootstrap"
 import BetStatusUI from './BetStatusUI'
+import OnlineChannelReportsUI from './OnlineChannelReportsUI'
 
 
 class App extends Component {
 
     state = {
-        showBetStatusUI: false
-    };
+        showBetStatusUI: false,
+        showChannelReportsUI: false
+    }
 
     render() {
         return (
@@ -22,17 +24,27 @@ class App extends Component {
                     <Nav>
                         <NavItem eventKey={1} onClick={() => {
                             this.setState({
-                                showBetStatusUI: true
+                                showBetStatusUI: true,
+                                showChannelReportsUI: false
                             })
                         }}>
                             Bet Status
                         </NavItem>
+                        <NavItem eventKey={1} onClick={() => {
+                            this.setState({
+                                showBetStatusUI: false,
+                                showChannelReportsUI: true
+                            })
+                        }}>
+                            Online Channel Reports
+                        </NavItem>
                     </Nav>
                 </Navbar>
                 {this.state.showBetStatusUI && <BetStatusUI/>}
+                {this.state.showChannelReportsUI && <OnlineChannelReportsUI/>}
             </div>
-        );
+        )
     }
 }
 
-export default App;
+export default App
