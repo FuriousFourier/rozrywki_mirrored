@@ -1,4 +1,8 @@
 package pl.edu.agh.reporting.events;
 
-public class ReportingEvent {
+import java.time.Instant;
+
+public interface ReportingEvent {
+
+    Instant getTimestamp();
 }

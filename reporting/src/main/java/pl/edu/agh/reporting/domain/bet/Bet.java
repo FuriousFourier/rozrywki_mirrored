@@ -1,22 +1,19 @@
 package pl.edu.agh.reporting.domain.bet;
 
+import lombok.Builder;
 import lombok.Getter;
+import lombok.ToString;
 
 @Getter
+@Builder
+@ToString
 public class Bet {
 
     private final String betId;
 
-    private final String event;
-
     private final String player;
 
-    private BetStatus status;
+    @Builder.Default
+    private BetStatus status = BetStatus.OPEN;
 
-    public Bet(String betId, String event, String player) {
-        this.betId = betId;
-        this.event = event;
-        this.player = player;
-        this.status = BetStatus.OPEN;
-    }
 }

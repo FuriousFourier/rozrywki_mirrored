@@ -34,10 +34,10 @@ class BetStatusUI extends Component {
                 <Table striped bordered condensed hover>
                     <thead>
                     <tr>
-                        <th>Bet ID</th>
-                        <th>Gracz</th>
-                        <th>Wydarzenie</th>
-                        <th>Status zakładu</th>
+                        <th>Bet Slip ID</th>
+                        <th>Player</th>
+                        <th>Event</th>
+                        <th>Status</th>
                     </tr>
                     </thead>
                     <tbody>
