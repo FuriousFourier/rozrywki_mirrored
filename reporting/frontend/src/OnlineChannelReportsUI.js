@@ -12,6 +12,7 @@ class OnlineChannelReportsUI extends Component {
 
     componentDidMount() {
         this.getPlayers()
+        setInterval(this.getPlayers, 3000)
     }
 
     getPlayers = () => {
