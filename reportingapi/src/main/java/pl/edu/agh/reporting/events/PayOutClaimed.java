@@ -8,6 +8,8 @@ import org.joda.money.Money;
 import pl.edu.agh.reporting.jackson.MoneyDeserializer;
 import pl.edu.agh.reporting.jackson.MoneySerializer;
 
+import java.time.Instant;
+
 @ToString
 @Getter
 public class PayOutClaimed implements ReportingEvent {
@@ -19,5 +21,6 @@ public class PayOutClaimed implements ReportingEvent {
     private String siteName;
 
     private String playerName;
+    private Instant timestamp;
 
 }

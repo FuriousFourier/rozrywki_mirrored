@@ -8,6 +8,8 @@ import org.joda.money.Money;
 import pl.edu.agh.reporting.jackson.MoneyDeserializer;
 import pl.edu.agh.reporting.jackson.MoneySerializer;
 
+import java.time.Instant;
+
 @ToString
 @Getter
 public class BetSlipPlaced implements ReportingEvent {
@@ -19,6 +21,7 @@ public class BetSlipPlaced implements ReportingEvent {
     private String siteName;
 
     private String onlineChannelName;
+    private Instant timestamp;
 
     @JsonSerialize(using = MoneySerializer.class)
     @JsonDeserialize(using = MoneyDeserializer.class)
