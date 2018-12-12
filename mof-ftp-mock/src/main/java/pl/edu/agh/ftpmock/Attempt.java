@@ -7,7 +7,8 @@ import org.apache.ftpserver.listener.ListenerFactory;
 import org.apache.ftpserver.usermanager.PropertiesUserManagerFactory;
 import org.apache.ftpserver.usermanager.impl.BaseUser;
 import org.apache.ftpserver.usermanager.impl.WritePermission;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,7 +16,7 @@ import java.util.*;
 
 public class Attempt {
 
-    public static final Logger LOGGER = Logger.getLogger(Attempt.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Attempt.class);
 
     public static void main(String[] args) {
         FtpServerFactory serverFactory = new FtpServerFactory();
@@ -25,38 +26,15 @@ public class Attempt {
         serverFactory.addListener("default", listenerFactory.createListener());
 
         PropertiesUserManagerFactory userManagerFactory = new PropertiesUserManagerFactory();
-        File propFile = new File("users.properties");
-        propFile.delete();
-
-        try {
-            if (!propFile.createNewFile()) {
-                LOGGER.error("Cannot create file: " + propFile.getName());
-                System.exit(1);
-            }
-        } catch (IOException e) {
-            LOGGER.error("IOException while creating file: " + propFile.getName());
-            System.exit(2);
-        }
+        File propFile = new File("default_users.properties");
 
         userManagerFactory.setFile(propFile);
-        BaseUser user = new BaseUser();
-        user.setName("reporting");
-        user.setPassword("report1234");
-        user.setHomeDirectory("./");
-        user.setAuthorities(Collections.singletonList(new WritePermission()));
 
         UserManager um = userManagerFactory.createUserManager();
-        try {
-            um.save(user);//Save the user to the user list on the filesystem
-        }
-        catch (FtpException e1) {
-            e1.printStackTrace();
-        }
-
         serverFactory.setUserManager(um);
 
 
-        Map<String, Ftplet> ftplets = new HashMap<String, Ftplet>();
+        Map<String, Ftplet> ftplets = new HashMap<>();
         ftplets.put("entertainmentFtplet", new MofFtplet());
         serverFactory.setFtplets(ftplets);
         try {
@@ -65,5 +43,16 @@ public class Attempt {
         } catch (FtpException e) {
             e.printStackTrace();
         }
+        new Thread(() -> {
+            Scanner scanner = new Scanner(System.in);
+            while (true) {
+                String s = scanner.nextLine();
+                if (s.equalsIgnoreCase("q")) {
+                    LOGGER.info("BYE");
+                    System.exit(0);
+                }
+            }
+        }).start();
+        LOGGER.info("Everything started");
     }
 }
