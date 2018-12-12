@@ -8,18 +8,19 @@ import org.joda.money.Money;
 import pl.edu.agh.reporting.jackson.MoneyDeserializer;
 import pl.edu.agh.reporting.jackson.MoneySerializer;
 
+import java.time.Instant;
+
 @ToString
 @Getter
-public class BetMadeEvent implements ReportingEvent {
-
-    private String betId;
-
-    private String eventInfo;
-
-    private String playerInfo;
+public class PayOutClaimed implements ReportingEvent {
 
     @JsonSerialize(using = MoneySerializer.class)
     @JsonDeserialize(using = MoneyDeserializer.class)
-    private Money betPrice;
+    private Money money;
+
+    private String siteName;
+
+    private String playerName;
+    private Instant timestamp;
 
 }
