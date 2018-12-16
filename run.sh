@@ -7,7 +7,7 @@ cd ../reporting
 nohup ./mvnw spring-boot:run &
 echo REPORTING IS BEING RUN
 cd ../mof-ftp-mock
-nohup mvn clean -U compile exec:java &
+nohup ./mvnw clean -U compile exec:java &
 echo MOF FTP SERVER STARTING
 cd ../reporting-gateway
 ./mvnw spring-boot:run
