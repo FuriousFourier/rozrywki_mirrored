@@ -11,6 +11,7 @@ import org.apache.ftpserver.ftplet.Ftplet;
 import org.apache.ftpserver.ftplet.User;
 import org.apache.ftpserver.ftplet.UserManager;
 import org.apache.ftpserver.listener.ListenerFactory;
+import org.apache.ftpserver.ssl.SslConfigurationFactory;
 import org.apache.ftpserver.usermanager.PropertiesUserManagerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +23,10 @@ public class MofMock {
 	public static void main(String[] args) {
 		FtpServerFactory serverFactory = new FtpServerFactory();
 		ListenerFactory listenerFactory = new ListenerFactory();
+		SslConfigurationFactory sslConfigurationFactory = new SslConfigurationFactory();
+
+		sslConfigurationFactory.setKeystorePassword("report1234");
+		sslConfigurationFactory.setKeystoreFile(new File("mofkeystore.jks"));
 
 		listenerFactory.setPort(2221);
 		serverFactory.addListener("default", listenerFactory.createListener());
