@@ -15,9 +15,9 @@ import org.apache.ftpserver.usermanager.PropertiesUserManagerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Attempt {
+public class MofMock {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(Attempt.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(MofMock.class);
 
 	public static void main(String[] args) {
 		FtpServerFactory serverFactory = new FtpServerFactory();
