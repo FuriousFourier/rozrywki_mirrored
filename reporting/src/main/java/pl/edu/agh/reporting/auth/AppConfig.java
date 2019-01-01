@@ -22,11 +22,15 @@ public class AppConfig {
     @Value(value = "${com.auth0.clientSecret}")
     private String clientSecret;
 
+    @Getter
+    @Value(value = "${com.auth0.protectedEndpoints}")
+    private String[] protectedEndpoints;
+
     @Bean
     public FilterRegistrationBean filterRegistration() {
         final FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setFilter(new Auth0Filter());
-        registration.addUrlPatterns("/home/*", "/api/*");
+        registration.addUrlPatterns(protectedEndpoints);
         registration.setName(Auth0Filter.class.getSimpleName());
         return registration;
     }
