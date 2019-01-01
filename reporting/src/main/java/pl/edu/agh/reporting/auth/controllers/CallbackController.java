@@ -1,4 +1,4 @@
-package pl.edu.agh.reporting.auth;
+package pl.edu.agh.reporting.auth.controllers;
 
 import com.auth0.IdentityVerificationException;
 import com.auth0.SessionUtils;
@@ -8,6 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import pl.edu.agh.reporting.auth.AuthController;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
