@@ -5,14 +5,19 @@ import {PageHeader, Table} from "react-bootstrap"
 
 class OnlineChannelReportsUI extends Component {
 
+    interval = null;
     state = {
         players: []
-    }
+    };
 
 
     componentDidMount() {
-        this.getPlayers()
-        setInterval(this.getPlayers, 3000)
+        this.getPlayers();
+        this.interval = setInterval(this.getPlayers, 3000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval);
     }
 
     getPlayers = () => {
@@ -23,10 +28,10 @@ class OnlineChannelReportsUI extends Component {
                     players: JSON.parse(message)
                 })
             })
-    }
+    };
 
     render() {
-        console.log(this.state)
+        console.log(this.state);
         return (
             <div>
                 <PageHeader>

@@ -31,7 +31,7 @@ public class ReportsController {
         return onlinePlayersRepository.findAll();
     }
 
-    @GetMapping("/api/players")
+    @GetMapping("/api/players2")
     public List<OnlinePlayerReport> getOnlinePlayerReports(@RequestBody TimeSlot timeSlot) {
         return onlinePlayersRepository.findAllBetween(timeSlot.getStart(), timeSlot.getEnd());
     }
