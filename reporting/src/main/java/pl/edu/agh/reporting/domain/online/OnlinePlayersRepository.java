@@ -1,6 +1,6 @@
 package pl.edu.agh.reporting.domain.online;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,5 +12,5 @@ public interface OnlinePlayersRepository {
 
     List<OnlinePlayerReport> findAll();
 
-    List<OnlinePlayerReport> findAllBetween(LocalDateTime start, LocalDateTime end);
+    List<OnlinePlayerReport> findAllBetween(Instant start, Instant end);
 }

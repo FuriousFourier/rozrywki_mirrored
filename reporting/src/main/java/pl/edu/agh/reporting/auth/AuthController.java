@@ -17,7 +17,7 @@ public class AuthController {
     private final String clientId;
 
     @Autowired
-    public AuthController(AppConfig config) {
+    public AuthController(AuthConfig config) {
         domain = config.getDomain();
         clientId = config.getClientId();
         controller = AuthenticationController.newBuilder(domain, clientId, config.getClientSecret()).build();

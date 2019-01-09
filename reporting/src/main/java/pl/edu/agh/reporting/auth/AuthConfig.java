@@ -3,13 +3,12 @@ package pl.edu.agh.reporting.auth;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Component
 @Configuration
-public class AppConfig {
+public class AuthConfig {
     @Getter
     @Value(value = "${com.auth0.domain}")
     private String domain;

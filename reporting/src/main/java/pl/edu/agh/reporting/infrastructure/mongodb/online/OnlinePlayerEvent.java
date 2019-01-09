@@ -1,4 +1,4 @@
-package pl.edu.agh.reporting.infrastructure.mongodb;
+package pl.edu.agh.reporting.infrastructure.mongodb.online;
 
 import lombok.AccessLevel;
 import lombok.Getter;

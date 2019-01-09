@@ -1,13 +1,15 @@
 import React, {Component} from 'react'
 import './App.css'
 import {PageHeader, Table} from "react-bootstrap"
+import DateTimeRangePicker from '@wojtekmaj/react-datetimerange-picker';
 
 
 class OnlineChannelReportsUI extends Component {
 
     interval = null;
     state = {
-        players: []
+        players: [],
+        period: null
     };
 
 
@@ -21,22 +23,42 @@ class OnlineChannelReportsUI extends Component {
     }
 
     getPlayers = () => {
-        fetch('/api/players')
+        const isPeriodDefined = this.state.period
+        const definedStart = isPeriodDefined && this.state.period[0]
+        const definedEnd = isPeriodDefined && this.state.period[1]
+        const requestUri = isPeriodDefined ?
+            `/api/players/${definedStart.toISOString()}/${definedEnd.toISOString()}` :
+            '/api/players'
+        fetch(requestUri)
             .then(response => response.text())
             .then(message => {
                 this.setState({
                     players: JSON.parse(message)
                 })
             })
+            .catch(reason => {
+                console.warn(reason)
+            })
+    };
+
+    handlePeriodChange = (period) => {
+        this.setState({
+            period
+        })
     };
 
     render() {
-        console.log(this.state);
         return (
             <div>
                 <PageHeader>
                     Online Channel Reports UI
                 </PageHeader>
+                <DateTimeRangePicker
+                    onChange={this.handlePeriodChange}
+                    value={this.state.period}
+                />
+                <br/>
+                <br/>
                 <Table striped bordered condensed hover>
                     <thead>
                     <tr>
