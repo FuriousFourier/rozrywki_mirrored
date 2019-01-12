@@ -1,20 +1,21 @@
-package pl.edu.agh.reporting.infrastructure.mongodb;
+package pl.edu.agh.reporting.infrastructure.mongodb.online;
 
 import lombok.extern.slf4j.Slf4j;
 import org.joda.money.CurrencyUnit;
+import org.springframework.stereotype.Repository;
 import pl.edu.agh.reporting.domain.online.OnlinePlayerReport;
 import pl.edu.agh.reporting.domain.online.OnlinePlayersRepository;
 import pl.edu.agh.reporting.events.ReportingEvent;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-//@Repository
+@Repository
 @Slf4j
-public class MongoDbEvenSourcedOnlinePlayersRepository implements OnlinePlayersRepository {
+class MongoDbEvenSourcedOnlinePlayersRepository implements OnlinePlayersRepository {
 
     private final SpringMongoOnlinePlayerEventRepository springMongoOnlinePlayersRepository;
 
@@ -58,9 +59,9 @@ public class MongoDbEvenSourcedOnlinePlayersRepository implements OnlinePlayersR
     }
 
     @Override
-    public List<OnlinePlayerReport> findAllBetween(LocalDateTime start, LocalDateTime end) {
+    public List<OnlinePlayerReport> findAllBetween(Instant start, Instant end) {
         final Map<String, List<OnlinePlayerEvent>> eventsPerPlayerName =
-                springMongoOnlinePlayersRepository.findAllByTimestampAfterAndTimestampBefore(start, end)
+                springMongoOnlinePlayersRepository.findAllByTimestampBetween(start, end)
                         .stream()
                         .collect(Collectors.groupingBy(OnlinePlayerEvent::getName));
         return eventsPerPlayerName.entrySet().stream()

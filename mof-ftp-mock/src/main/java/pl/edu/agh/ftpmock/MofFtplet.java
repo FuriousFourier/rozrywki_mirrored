@@ -1,18 +1,6 @@
 package pl.edu.agh.ftpmock;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-
-import org.apache.ftpserver.ftplet.DataConnection;
-import org.apache.ftpserver.ftplet.DataConnectionFactory;
-import org.apache.ftpserver.ftplet.FtpReply;
-import org.apache.ftpserver.ftplet.FtpRequest;
-import org.apache.ftpserver.ftplet.FtpSession;
-import org.apache.ftpserver.ftplet.Ftplet;
-import org.apache.ftpserver.ftplet.FtpletContext;
-import org.apache.ftpserver.ftplet.FtpletResult;
+import org.apache.ftpserver.ftplet.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -55,38 +43,14 @@ public class MofFtplet implements Ftplet {
 	}
 
 	private void logFtpRequest(FtpSession session, FtpRequest request) {
-		LOGGER.info("User argument: " + session.getUserArgument());
-		LOGGER.info("Session: " + session.toString());
+		LOGGER.debug("User argument: " + session.getUserArgument());
+		LOGGER.debug("Session: " + session.toString());
 		if (request != null) {
-			LOGGER.info("Request argument: " + request.getArgument());
-			LOGGER.info("Command: " + request.getCommand());
-			LOGGER.info("Request line: " + request.getRequestLine());
-		}
-	}
-
-	private void saveFile(FtpSession session) {
-		OutputStream outputStream = null;
-		try {
-			File file = new File("dummy");
-			file.delete();
-			file.createNewFile();
-			outputStream = new FileOutputStream(file);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		DataConnectionFactory connectionFactory = session.getDataConnection();
-		try {
-			DataConnection dataConnection = connectionFactory.openConnection();
-			dataConnection.transferFromClient(session, outputStream);
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			connectionFactory.closeDataConnection();
-			try {
-				outputStream.close();
-			} catch (IOException e) {
-				e.printStackTrace();
+			if (request.hasArgument()) {
+				LOGGER.info("Command: " + request.getCommand());
+				LOGGER.info("Request argument: " + request.getArgument());
 			}
 		}
 	}
+
 }

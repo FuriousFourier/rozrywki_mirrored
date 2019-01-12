@@ -1,4 +1,4 @@
-package pl.edu.agh.reporting.infrastructure.mongodb;
+package pl.edu.agh.reporting.infrastructure.mongodb.bets;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;

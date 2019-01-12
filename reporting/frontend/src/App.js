@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import './App.css'
 import {Nav, Navbar, NavItem} from "react-bootstrap"
 import BetStatusUI from './BetStatusUI'
 import OnlineChannelReportsUI from './OnlineChannelReportsUI'
+import {LinkContainer} from 'react-router-bootstrap';
 
 function Home() {
     return (
@@ -19,19 +20,23 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-
                     <Navbar>
                         <Navbar.Header>
                             <Navbar.Brand>
-                                <a href="/">Reporting</a>
+                                <Link to={'/'}>Reporting</Link>
                             </Navbar.Brand>
                         </Navbar.Header>
                         <Nav>
-                            <NavItem eventKey={1} href='/players/'>
-                                Online Channel Reports
-                            </NavItem>
-                            <NavItem eventKey={1} href='/bets/'>
-                                Bet Status UI
+                            <LinkContainer to={'/players/'}>
+                                <NavItem eventKey={1}>Online Channel Reports</NavItem>
+                            </LinkContainer>
+                            <LinkContainer to={'/bets/'}>
+                                <NavItem eventKey={2}>Bet Status UI</NavItem>
+                            </LinkContainer>
+                        </Nav>
+                        <Nav pullRight>
+                            <NavItem eventKey={3} href={'/logout/'}>
+                                Logout
                             </NavItem>
                         </Nav>
                     </Navbar>
