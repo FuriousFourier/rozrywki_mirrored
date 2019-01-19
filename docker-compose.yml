@@ -2,17 +2,30 @@ version: '3'
 services:
   # app containers
   reporting:
-    build: .
+    build:
+      context: .
+      dockerfile: reporting/Dockerfile
     volumes:
+      - ./reportingapi/:/app/reportingapi
       - ./reporting/:/app/reporting
+    ports:
+      - '8080:8080'
+    depends_on:
+      - rabbitmq
+      - mongo
+  reporting-gateway:
+    build:
+      context: .
+      dockerfile: reporting-gateway/Dockerfile
+    volumes:
       - ./reportingapi/:/app/reportingapi
       - ./reporting-gateway/:/app/reporting-gateway
     ports:
-      - '8080:8080'
       - '8081:8081'
     depends_on:
       - rabbitmq
       - mongo
+
   # utility containers
   prom:
     image: prom/prometheus
@@ -33,14 +46,7 @@ services:
     image: rabbitmq:management
   mongo:
     image: mongo:xenial
-    
-    
-    
-    
-    
-    
-    
-    
+
   #ELK Stack
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.5.2
@@ -52,7 +58,6 @@ services:
       - "9300:9300"
     environment:
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
-
   logstash:
     image: docker.elastic.co/logstash/logstash:6.5.2
     volumes:
@@ -65,7 +70,6 @@ services:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
     depends_on:
       - elasticsearch
-
   kibana:
     image: docker.elastic.co/kibana/kibana:6.5.2
     volumes:
