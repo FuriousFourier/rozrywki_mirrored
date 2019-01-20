@@ -21,6 +21,7 @@ public class BetSlipPlaced implements ReportingEvent {
     private String siteName;
 
     private String onlineChannelName;
+
     private Instant timestamp;
 
     @JsonSerialize(using = MoneySerializer.class)

@@ -29,14 +29,14 @@ class BetStatusUI extends Component {
         return (
             <div>
                 <PageHeader>
-                    Bet Status UI
+                    Live Bets UI
                 </PageHeader>
                 <Table striped bordered condensed hover>
                     <thead>
                     <tr>
                         <th>Bet Slip ID</th>
                         <th>Player</th>
-                        <th>Event</th>
+                        <th>Number of bets</th>
                         <th>Status</th>
                     </tr>
                     </thead>
@@ -45,7 +45,7 @@ class BetStatusUI extends Component {
                         <tr key={idx}>
                             <td>{bet.betId}</td>
                             <td>{bet.player}</td>
-                            <td>{bet.event}</td>
+                            <td>{bet.betCount}</td>
                             <td>{bet.status}</td>
                         </tr>
                     ))}
