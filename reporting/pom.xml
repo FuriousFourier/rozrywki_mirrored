@@ -117,6 +117,7 @@
             <artifactId>spring-spock-mvc</artifactId>
             <version>0.2.2</version>
         </dependency>
+
         <dependency>
             <groupId>com.athaydes</groupId>
             <artifactId>spock-reports</artifactId>
@@ -250,6 +251,14 @@
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-plugins</id>
+            <name>Spring Plugins</name>
+            <url>http://repo.spring.io/plugins-release/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
