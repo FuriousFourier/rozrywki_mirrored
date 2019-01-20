@@ -16,6 +16,10 @@ public class BetSlipFinished implements ReportingEvent {
 
     private String betSlipId;
 
+    private String siteName;
+
+    private String onlineChannelName;
+
     private String playerName;
 
     private boolean won;

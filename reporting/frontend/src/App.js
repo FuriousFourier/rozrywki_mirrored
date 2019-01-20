@@ -5,6 +5,7 @@ import {Nav, Navbar, NavItem} from "react-bootstrap"
 import BetStatusUI from './BetStatusUI'
 import OnlineChannelReportsUI from './OnlineChannelReportsUI'
 import {LinkContainer} from 'react-router-bootstrap';
+import SiteReportsUI from "./SiteReportsUI";
 
 function Home() {
     return (
@@ -31,7 +32,10 @@ class App extends Component {
                                 <NavItem eventKey={1}>Online Channel Reports</NavItem>
                             </LinkContainer>
                             <LinkContainer to={'/bets/'}>
-                                <NavItem eventKey={2}>Bet Status UI</NavItem>
+                                <NavItem eventKey={2}>Live Bets UI</NavItem>
+                            </LinkContainer>
+                            <LinkContainer to={'/sites/'}>
+                                <NavItem eventKey={2}>Site Reports</NavItem>
                             </LinkContainer>
                         </Nav>
                         <Nav pullRight>
@@ -43,6 +47,7 @@ class App extends Component {
                     <Route path="/" exact component={Home}/>
                     <Route path="/bets/" component={BetStatusUI}/>
                     <Route path="/players/" component={OnlineChannelReportsUI}/>
+                    <Route path="/sites/" component={SiteReportsUI}/>
                 </div>
             </Router>
         )

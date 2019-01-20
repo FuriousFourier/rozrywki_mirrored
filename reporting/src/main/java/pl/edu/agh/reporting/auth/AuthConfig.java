@@ -26,7 +26,7 @@ public class AuthConfig {
     @Value(value = "${com.auth0.protectedEndpoints}")
     private String[] protectedEndpoints;
 
-    @Bean
+    //    @Bean
     public FilterRegistrationBean filterRegistration() {
         final FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setFilter(new Auth0Filter());
