@@ -1,10 +1,11 @@
-package pl.edu.agh.reporting.infrastructure.rabbitmq;
+package pl.edu.agh.reporting.infrastructure.kafka;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.function.json.JacksonMapper;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
+import org.springframework.kafka.support.DefaultKafkaHeaderMapper;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageHeaders;
 import pl.edu.agh.reporting.ReportingEventType;
@@ -13,13 +14,13 @@ import pl.edu.agh.reporting.events.ReportingEvent;
 
 @EnableBinding(Sink.class)
 @Slf4j
-public class RabbitMqEventHandler {
+public class KafkaEventHandler {
 
     private final ReportingApplicationService reportingApplicationService;
 
     private final JacksonMapper jacksonMapper;
 
-    public RabbitMqEventHandler(ReportingApplicationService reportingApplicationService, JacksonMapper jacksonMapper) {
+    public KafkaEventHandler(ReportingApplicationService reportingApplicationService, JacksonMapper jacksonMapper) {
         this.reportingApplicationService = reportingApplicationService;
         this.jacksonMapper = jacksonMapper;
     }
@@ -37,7 +38,8 @@ public class RabbitMqEventHandler {
     }
 
     private ReportingEventType resolveEventType(MessageHeaders headers) {
-        final String textEventType = headers.get("type", String.class);
+        byte[] typeHeaderValue = headers.get("type", DefaultKafkaHeaderMapper.NonTrustedHeaderType.class).getHeaderValue();
+        final String textEventType = new String(typeHeaderValue, 1, typeHeaderValue.length -2);
         return ReportingEventType.valueOf(textEventType);
     }
 
