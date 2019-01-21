@@ -5,6 +5,9 @@ services:
     build:
       context: .
       dockerfile: reporting/Dockerfile
+    environment:
+      - MONGO_HOST=mongo
+      - AUTHO_SECRET=UW7Sqm_cweUMN31BIrB7gFMKkDPXSX6vIA4-Fok9EL39v6hqv6vJ6OPB8JytG3qh
     volumes:
       - ./reportingapi/:/app/reportingapi
       - ./reporting/:/app/reporting
