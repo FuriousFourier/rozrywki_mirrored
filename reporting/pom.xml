@@ -117,11 +117,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.geowarin</groupId>
-            <artifactId>spring-spock-mvc</artifactId>
-            <version>0.2.2</version>
-        </dependency>
-        <dependency>
             <groupId>com.athaydes</groupId>
             <artifactId>spock-reports</artifactId>
             <version>1.6.1</version>
