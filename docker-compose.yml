@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: reporting/Dockerfile
     environment:
+      - KAFKA_HOST=kafka
       - MONGO_HOST=mongo
       - AUTHO_SECRET=UW7Sqm_cweUMN31BIrB7gFMKkDPXSX6vIA4-Fok9EL39v6hqv6vJ6OPB8JytG3qh
     volumes:
@@ -20,6 +21,8 @@ services:
     build:
       context: .
       dockerfile: reporting-gateway/Dockerfile
+    environment:
+      - KAFKA_HOST=kafka
     volumes:
       - ./reportingapi/:/app/reportingapi
       - ./reporting-gateway/:/app/reporting-gateway
