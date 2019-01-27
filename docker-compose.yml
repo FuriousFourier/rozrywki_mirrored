@@ -46,6 +46,8 @@ services:
     image: rabbitmq:management
   mongo:
     image: mongo:xenial
+    ports:
+      - "27017:27017"
 
   #ELK Stack
   elasticsearch:
