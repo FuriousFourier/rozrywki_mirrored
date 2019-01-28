@@ -1,6 +1,12 @@
 version: '3'
 services:
   # app containers
+  mof-ftp-mock:
+    build:
+      context: .
+      dockerfile: mof-ftp-mock/Dockerfile
+    ports:
+      - '2221:2221'
   reporting:
     build:
       context: .
