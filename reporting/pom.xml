@@ -64,6 +64,19 @@
             <version>1.0.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>4.4</version>
+        </dependency>
+
+
         <!-- Spring boot actuator to expose metrics endpoint -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -111,11 +124,6 @@
             <artifactId>spock-spring</artifactId>
             <version>1.1-groovy-2.4</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.geowarin</groupId>
-            <artifactId>spring-spock-mvc</artifactId>
-            <version>0.2.2</version>
         </dependency>
 
         <dependency>
@@ -251,14 +259,6 @@
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>spring-plugins</id>
-            <name>Spring Plugins</name>
-            <url>http://repo.spring.io/plugins-release/</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
