@@ -29,7 +29,8 @@ public class AuthController {
     }
     
     private String buildCanonicalUrl(HttpServletRequest request) {
-        return request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort();
+        return request.getScheme() + "://" + request.getServerName() +
+                (request.getServerPort() != 80 ? ":" + request.getServerPort() : "");
     }
 
     public String buildCallbackUrl(HttpServletRequest request) {
