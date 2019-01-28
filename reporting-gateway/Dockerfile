@@ -7,4 +7,6 @@ WORKDIR /app
 
 EXPOSE 8081
 
+RUN cd reportingapi/ && ./mvnw install && cd ../reporting ./mvnw install
+
 CMD ["./run.sh"]

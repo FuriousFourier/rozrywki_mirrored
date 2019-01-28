@@ -7,7 +7,7 @@ services:
       dockerfile: reporting/Dockerfile
     environment:
       - KAFKA_HOST=kafka
-      - MONGO_HOST=mongo
+      - MONGO_URI=mongodb://mongo:27017/reporting
       - AUTHO_SECRET=UW7Sqm_cweUMN31BIrB7gFMKkDPXSX6vIA4-Fok9EL39v6hqv6vJ6OPB8JytG3qh
     volumes:
       - ./reportingapi/:/app/reportingapi
