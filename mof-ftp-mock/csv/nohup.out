@@ -1,0 +1,809 @@
+/home/pawel/AGH/rozrywki/mof-ftp-mock
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< pl.edu.agh:ftp-mock >-------------------------
+[INFO] Building ftp-mock 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ ftp-mock ---
+[INFO] Deleting /home/pawel/Dokumenty/AGH_rok/rozrywki/mof-ftp-mock/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ftp-mock ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ ftp-mock ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/pawel/Dokumenty/AGH_rok/rozrywki/mof-ftp-mock/target/classes
+[INFO] 
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ ftp-mock ---
+2018-12-16 01:41:57 DEBUG PropertiesUserManager:155 - File configured, will try loading
+2018-12-16 01:41:57 DEBUG PropertiesUserManager:160 - File found on file system
+2018-12-16 01:41:57 DEBUG MofMock:40 - User names:
+2018-12-16 01:41:57 DEBUG MofMock:48 - 	reporting: ./csv
+2018-12-16 01:41:57 DEBUG DefaultFtpServerContext:277 - Intializing shared thread pool executor with max threads of 10
+2018-12-16 01:41:57 INFO  MofFtplet:13 - Initializing
+2018-12-16 01:41:57 INFO  DefaultFtpServer:89 - FTP server started
+2018-12-16 01:41:57 INFO  MofMock:65 - Everything started
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a SESSION_CREATED event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a SESSION_CREATED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:186 - CREATED
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event SESSION_CREATED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event SESSION_CREATED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a SESSION_OPENED event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event SESSION_OPENED to session 2
+Queue : [SESSION_OPENED, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event SESSION_OPENED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a SESSION_OPENED event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a SESSION_OPENED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:186 - OPENED
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@69650811
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event SESSION_OPENED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event SESSION_OPENED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:84 - RECEIVED: USER reporting
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@a830e3
+2018-12-16 01:42:29 INFO  MofFtplet:50 - Command: USER
+2018-12-16 01:42:29 INFO  MofFtplet:51 - Request argument: reporting
+2018-12-16 01:42:29 DEBUG USER:121 - Currently 0 out of 10 anonymous users logged in
+2018-12-16 01:42:29 DEBUG USER:144 - Currently 0 out of 10 users logged in
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: reporting
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@5b852b4
+2018-12-16 01:42:29 INFO  MofFtplet:50 - Command: USER
+2018-12-16 01:42:29 INFO  MofFtplet:51 - Request argument: reporting
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 220 Service ready for new user.
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:84 - RECEIVED: PASS *****
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: reporting
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@49dd5021
+2018-12-16 01:42:29 INFO  MofFtplet:50 - Command: PASS
+2018-12-16 01:42:29 INFO  MofFtplet:51 - Request argument: report1234
+2018-12-16 01:42:29 DEBUG PASS:131 - Currently 0 out of 10 users logged in
+2018-12-16 01:42:29 DEBUG NativeFileSystemView:87 - Native filesystem view created for user "reporting" with root "./csv/"
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 INFO  PASS:245 - Login success - reporting
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@53080c60
+2018-12-16 01:42:29 INFO  MofFtplet:50 - Command: PASS
+2018-12-16 01:42:29 INFO  MofFtplet:51 - Request argument: report1234
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 331 User name okay, need password for reporting.
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:84 - RECEIVED: SYST
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@74f69d39
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@36d4da29
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 230 User logged in, proceed.
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 215 UNIX Type: Apache FtpServer
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:84 - RECEIVED: PWD
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@7768a28a
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@547f16b9
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:84 - RECEIVED: TYPE I
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@d4895a5
+2018-12-16 01:42:29 INFO  MofFtplet:50 - Command: TYPE
+2018-12-16 01:42:29 INFO  MofFtplet:51 - Request argument: I
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@7353b0c0
+2018-12-16 01:42:29 INFO  MofFtplet:50 - Command: TYPE
+2018-12-16 01:42:29 INFO  MofFtplet:51 - Request argument: I
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 257 "/" is current directory.
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:84 - RECEIVED: EPSV
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@3a7fe6b2
+2018-12-16 01:42:29 DEBUG IODataConnectionFactory:160 - Initiating passive data connection
+2018-12-16 01:42:29 DEBUG IODataConnectionFactory:208 - Opening passive data connection on address "/0:0:0:0:0:0:0:1" and port 0
+2018-12-16 01:42:29 DEBUG IODataConnectionFactory:213 - Passive data connection created on address "/0:0:0:0:0:0:0:1" and port 0
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@4ab5a2b5
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 200 Command TYPE okay.
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:84 - RECEIVED: list -la
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@2428bd89
+2018-12-16 01:42:29 INFO  MofFtplet:50 - Command: LIST
+2018-12-16 01:42:29 INFO  MofFtplet:51 - Request argument: -la
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IODataConnectionFactory:352 - Opening passive data connection
+2018-12-16 01:42:29 DEBUG IODataConnectionFactory:376 - Passive data connection opened
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 2
+Queue : [MESSAGE_SENT, , MESSAGE_SENT, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:29 WARN  PassivePorts:242 - Releasing unreserved passive port: 40195
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:29 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@32679900
+2018-12-16 01:42:29 INFO  MofFtplet:50 - Command: LIST
+2018-12-16 01:42:29 INFO  MofFtplet:51 - Request argument: -la
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 229 Entering Passive Mode (|||40195|)
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 150 File status okay; about to open data connection.
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 2
+2018-12-16 01:42:29 INFO  FtpLoggingFilter:157 - SENT: 226 Closing data connection.
+
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:29 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:37 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 2
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:37 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 2
+2018-12-16 01:42:37 INFO  FtpLoggingFilter:84 - RECEIVED: quit
+2018-12-16 01:42:37 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:37 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@f11da1a
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 2
+2018-12-16 01:42:37 DEBUG QUIT:57 - QUIT received, closing session
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a CLOSE event for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a CLOSE event for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event CLOSE has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event CLOSE has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a SESSION_CLOSED event for session 2
+2018-12-16 01:42:37 DEBUG OrderedThreadPoolExecutor:424 - Adding event SESSION_CLOSED to session 2
+Queue : [SESSION_CLOSED, ]
+
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event SESSION_CLOSED has been fired for session 2
+2018-12-16 01:42:37 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:37 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@1d62588
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a SESSION_CREATED event for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a SESSION_CREATED event for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a SESSION_CLOSED event for session 2
+2018-12-16 01:42:37 INFO  FtpLoggingFilter:186 - CREATED
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a SESSION_CLOSED event for session 2
+2018-12-16 01:42:37 INFO  FtpLoggingFilter:186 - CLOSED
+2018-12-16 01:42:37 DEBUG DefaultFtpHandler:95 - Closing session
+2018-12-16 01:42:37 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:37 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@5e9b16a
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event SESSION_CREATED has been fired for session 3
+2018-12-16 01:42:37 DEBUG DefaultFtpHandler:130 - Statistics login and connection count decreased due to session close
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event SESSION_CREATED has been fired for session 3
+2018-12-16 01:42:37 DEBUG DefaultFtpHandler:134 - Session closed
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a SESSION_OPENED event for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event SESSION_CLOSED has been fired for session 2
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event SESSION_CLOSED has been fired for session 2
+2018-12-16 01:42:37 DEBUG OrderedThreadPoolExecutor:424 - Adding event SESSION_OPENED to session 3
+Queue : [SESSION_OPENED, ]
+
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event SESSION_OPENED has been fired for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a SESSION_OPENED event for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a SESSION_OPENED event for session 3
+2018-12-16 01:42:37 INFO  FtpLoggingFilter:186 - OPENED
+2018-12-16 01:42:37 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:37 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@3c30da0f
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:37 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, ]
+
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event SESSION_OPENED has been fired for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event SESSION_OPENED has been fired for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:37 INFO  FtpLoggingFilter:157 - SENT: 220 Service ready for new user.
+
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:37 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: USER reporting
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@40eb2fb3
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: USER
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: reporting
+2018-12-16 01:42:44 DEBUG USER:121 - Currently 0 out of 10 anonymous users logged in
+2018-12-16 01:42:44 DEBUG USER:144 - Currently 0 out of 10 users logged in
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: reporting
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@41abfcbe
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: USER
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: reporting
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: PASS *****
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: reporting
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@71616b66
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: PASS
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: report1234
+2018-12-16 01:42:44 DEBUG PASS:131 - Currently 0 out of 10 users logged in
+2018-12-16 01:42:44 DEBUG NativeFileSystemView:87 - Native filesystem view created for user "reporting" with root "./csv/"
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 INFO  PASS:245 - Login success - reporting
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@39cbe6c1
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: PASS
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: report1234
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 331 User name okay, need password for reporting.
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: SYST
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@20c4d0fc
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@3e949656
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 230 User logged in, proceed.
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: PWD
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@44d4f0b9
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@22cfeb0c
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 215 UNIX Type: Apache FtpServer
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: cwd /nohup.out
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@248a8c99
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: CWD
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: /nohup.out
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@cef108
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: CWD
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: /nohup.out
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 257 "/" is current directory.
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: TYPE I
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@70d05bcc
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: TYPE
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: I
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@7aafe8f6
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: TYPE
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: I
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 550 No such directory.
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 200 Command TYPE okay.
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: EPSV
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@60dc92
+2018-12-16 01:42:44 DEBUG IODataConnectionFactory:160 - Initiating passive data connection
+2018-12-16 01:42:44 DEBUG IODataConnectionFactory:208 - Opening passive data connection on address "/0:0:0:0:0:0:0:1" and port 0
+2018-12-16 01:42:44 DEBUG IODataConnectionFactory:213 - Passive data connection created on address "/0:0:0:0:0:0:0:1" and port 0
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@77513b27
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: list nohup.out
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@52d103a
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: LIST
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: nohup.out
+2018-12-16 01:42:44 DEBUG LIST:88 - Listing on a non-existing file
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 WARN  PassivePorts:242 - Releasing unreserved passive port: 45533
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@c0b031
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: LIST
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: nohup.out
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 229 Entering Passive Mode (|||45533|)
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 450 Non-existing file
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: SIZE /nohup.out
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@2303e442
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: SIZE
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: /nohup.out
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@3ec564ee
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: SIZE
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: /nohup.out
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 550 /nohup.out: No such file or directory.
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: SIZE /nohup.out.part
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@306445af
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: SIZE
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: /nohup.out.part
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@abe110e
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: SIZE
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: /nohup.out.part
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: EPSV
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@3623d5ef
+2018-12-16 01:42:44 DEBUG IODataConnectionFactory:160 - Initiating passive data connection
+2018-12-16 01:42:44 DEBUG IODataConnectionFactory:208 - Opening passive data connection on address "/0:0:0:0:0:0:0:1" and port 0
+2018-12-16 01:42:44 DEBUG IODataConnectionFactory:213 - Passive data connection created on address "/0:0:0:0:0:0:0:1" and port 0
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_RECEIVED to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG OrderedThreadPoolExecutor:424 - Adding event MESSAGE_SENT to session 3
+Queue : [MESSAGE_SENT, , MESSAGE_RECEIVED, , MESSAGE_SENT, ]
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event WRITE has been fired for session 3
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@235425d1
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_RECEIVED has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_SENT event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:157 - SENT: 550 /nohup.out.part: No such file or directory.
+
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:130 - Event MESSAGE_SENT has been fired for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 DEBUG ProtocolCodecFilter:233 - Processing a MESSAGE_RECEIVED for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a MESSAGE_RECEIVED event for session 3
+2018-12-16 01:42:44 INFO  FtpLoggingFilter:84 - RECEIVED: stor /nohup.out.part
+2018-12-16 01:42:44 DEBUG MofFtplet:46 - User argument: null
+2018-12-16 01:42:44 DEBUG MofFtplet:47 - Session: org.apache.ftpserver.impl.DefaultFtpSession@318f4529
+2018-12-16 01:42:44 INFO  MofFtplet:50 - Command: STOR
+2018-12-16 01:42:44 INFO  MofFtplet:51 - Request argument: /nohup.out.part
+2018-12-16 01:42:44 DEBUG NativeFtpFile:205 - Checking authorization for /nohup.out.part
+2018-12-16 01:42:44 DEBUG NativeFtpFile:211 - Checking if file exists
+2018-12-16 01:42:44 DEBUG NativeFtpFile:217 - Authorized
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
+2018-12-16 01:42:44 DEBUG IoFilterEvent:81 - Firing a WRITE event for session 3
